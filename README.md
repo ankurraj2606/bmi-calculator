@@ -83,6 +83,7 @@ bmi-calculator/
 ## 🎨 Key Features Implementation
 
 ### Debouncing
+
 The calculator uses a custom debounce function to prevent excessive calculations while users are typing:
 
 ```javascript
@@ -98,6 +99,7 @@ function debounce(func, delay = 1700) {
 ```
 
 ### Dynamic Classification
+
 BMI results are classified in real-time with personalized messages:
 
 ```javascript
@@ -109,13 +111,16 @@ function getBMIClassification(bmi, heightInCm) {
 ```
 
 ### Unit Conversion
+
 Accurate conversion between metric and imperial systems:
+
 - **Height**: ft & in → cm (1 inch = 2.54 cm)
 - **Weight**: st & lbs → kg (1 lb = 0.453592 kg)
 
 ## 📱 Responsive Design
 
 The calculator is fully responsive and works seamlessly on:
+
 - Desktop computers
 - Tablets
 - Mobile devices
