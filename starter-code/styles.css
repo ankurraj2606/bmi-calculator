@@ -36,26 +36,60 @@ section {
   margin-left: 10%;
   margin-right: 10%;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     margin-left: 5%;
     margin-right: 5%;
   }
 }
 
+.main-logo-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
 .main-container {
   padding: 88px 0;
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
 }
 
 .main-logo {
   width: 64px;
   height: 64px;
   margin-bottom: 24px;
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .bmi-calc {
   display: flex;
   justify-content: space-between;
   gap: 32px;
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    flex-direction: column;
+  }
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -66,6 +100,10 @@ section {
 .bmi-right {
   width: calc(50% - 16px);
 
+  @media (min-width:768px) and (max-width: 1024px) {
+    width: 100%;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -74,6 +112,11 @@ section {
 .bmi-left {
   padding: 72px 0;
   text-align: left;
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    padding: 2.5rem 0;
+    text-align: center;
+  }
 
   @media (max-width: 768px) {
     padding: 2.5rem 0;
@@ -88,7 +131,11 @@ section {
   box-shadow: 16px 32px 56px 0px #8faecf40;
 
   @media (max-width: 768px) {
-    padding: 0;
+    padding: 1rem;
+  }
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    padding: 1rem;
   }
 }
 
@@ -112,7 +159,7 @@ section {
   line-height: 1.1;
   margin-bottom: 32px;
 
-  @media (max-width: 768px) {
+    @media (min-width:768px) and (max-width: 1024px) {
     font-size: 3rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -211,7 +258,7 @@ input[type="number"]::-webkit-outer-spin-button {
   align-items: center;
   padding: 32px;
 
-  @media (max-width: 768px) {
+  @media (min-width:768px) and (max-width: 1024px) {
     flex-direction: column;
     gap: 2rem;
   }
@@ -261,12 +308,20 @@ input[type="number"]::-webkit-outer-spin-button {
 .bmi-meaning .left img {
   max-width: 564px;
   height: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .right h2 {
   font-size: 48px;
   font-weight: 600;
   padding-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
 .benefits {
@@ -276,6 +331,12 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 5.5rem 7rem 5.5rem 0;
   border-radius: 35px;
   margin-right: 2rem;
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
+    margin-right: 0;
+  }
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -300,8 +361,14 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 50%;
   max-width: 564px;
 
+  @media (min-width:768px) and (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -322,12 +389,23 @@ input[type="number"]::-webkit-outer-spin-button {
 .lim-div h2 {
   font-size: 48px;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 2rem
+  }
 }
 
 .first-row {
   display: flex;
   flex-direction: row;
   gap: 8rem;
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -343,6 +421,12 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 
+  @media (min-width:768px) and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 2rem;
@@ -355,9 +439,14 @@ input[type="number"]::-webkit-outer-spin-button {
   justify-content: center;
   gap: 8rem;
 
-  @media (max-width: 768px) {
+  @media (min-width:768px) and (max-width: 1024px) {
     gap: 2rem;
     flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
@@ -389,8 +478,9 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-direction: column;
 }
 
-@media (max-width: 768px) {
+@media (min-width:768px) and (max-width: 1024px) {
    .lim-div h2, .lim-div p {
     text-align: center;
+    font-size: 2rem;
    }
 }
